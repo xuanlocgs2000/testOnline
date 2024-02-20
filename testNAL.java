@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 class testOnline {
         public static int countVietnameseLetters(String input) {
-        HashSet<String> vietnameseLetters = new HashSet<>();
+        HashSet<String> vietnameseLetters = new HashSet<>();//HashSet để lưu các ký tự Tiếng Việt
         vietnameseLetters.add("aw");
         vietnameseLetters.add("aa");
         vietnameseLetters.add("dd");
@@ -25,8 +25,7 @@ class testOnline {
                     continue;
                 }
             }
-            //case 2: chỉ lấy một ký tự từ vị trí i
-
+            //case 2: chỉ lấy được một ký tự từ vị trí i
             String oneChar = input.substring(i, i + 1);
             if (vietnameseLetters.contains(oneChar)) {
                 count++;// Nếu đúng, tăng biến đếm lên 1
